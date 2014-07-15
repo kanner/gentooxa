@@ -1,0 +1,91 @@
+dev-lang/php mysql mysqli session apache2 -truetype -exif -xpm pdo gd
+=app-emulation/wine-1.6.2 -udisks
+=sys-devel/gcc-3.4.6-r2 -nls
+net-im/qutim oscar irc sdl
+net-misc/tightvnc java server
+net-dialup/ppp dhcp
+net-p2p/transmission qt4
+app-emulation/qemu sdl
+net-wireless/wpa_supplicant qt4
+media-libs/sdl-mixer mad
+app-doc/doxygen dot doc qt4
+media-libs/gd fontconfig
+sys-block/gparted btrfs dmraid fat hfs jfs mdadm ntfs reiser4 reiserfs xfs
+media-tv/v4l-utils qt4
+#app-emulation/uae sdl
+app-emulation/e-uae sdl sdl-sound gtk
+www-plugins/adobe-flash sse2
+media-video/ffmpeg opus
+dev-util/cscope emacs
+dev-vcs/git subversion tk
+dev-util/cppcheck qt4
+dev-vcs/subversion -dso perl
+
+# required by www-client/firefox-24.6.0
+# required by firefox (argument)
+=dev-lang/python-2.7.6 sqlite
+
+# required by app-text/evince-3.10.3
+# required by evince (argument)
+=app-text/poppler-0.24.5 cairo
+
+# required by app-text/gnome-doc-utils-0.20.10-r1
+# required by sys-block/gparted-0.16.2
+# required by gparted (argument)
+>=dev-libs/libxml2-2.9.1-r4 icu python
+
+# required by media-video/vlc-2.1.2
+# required by media-video/vlc (argument)
+>=sys-libs/zlib-1.2.8-r1 minizip
+
+# required by app-office/libreoffice-4.2.5.2
+# required by libreoffice (argument)
+=media-libs/harfbuzz-0.9.23 icu
+
+# required by net-print/cups-1.7.1-r1
+# required by app-office/libreoffice-4.2.5.2[cups]
+# required by libreoffice (argument)
+=app-text/ghostscript-gpl-9.10-r2 cups
+
+# required by mail-client/thunderbird-24.6.0
+# required by thunderbird (argument)
+=media-libs/libpng-1.6.10 apng
+
+# required by media-gfx/gimp-2.8.10-r1[udev]
+# required by gimp (argument)
+>=virtual/udev-208-r2 gudev
+
+# required by dev-lang/php-5.5.14
+# required by virtual/httpd-php-5.5
+# required by dev-db/phpmyadmin-4.1.7
+# required by phpmyadmin (argument)
+>=app-admin/eselect-php-0.7.1-r3 apache2
+
+# required by media-sound/pulseaudio-5.0-r2[alsa]
+# required by net-im/skype-4.3.0.37[pulseaudio]
+# required by skype (argument)
+=media-plugins/alsa-plugins-1.0.27-r1 pulseaudio
+
+# required by mail-client/thunderbird-24.6.0[crypt]
+# required by thunderbird (argument)
+=app-crypt/pinentry-0.8.2 gtk
+
+# required by virtual/libgudev-208
+# required by virtual/udev-208-r2[gudev]
+# required by net-wireless/crda-1.1.2-r3
+# required by net-wireless/wpa_supplicant-2.0-r2
+# required by wpa_supplicant (argument)
+=sys-fs/udev-212-r1 gudev
+
+# /usr/portage/profiles/hardened/linux/package.mask:
+# Hardened versions of gcc-4.0* through gcc-4.2* are not available.
+=sys-devel/gcc-4.1.2 -hardened -nls
+
+# required by sys-devel/clang-3.4.2-r100
+# required by dev-util/include-what-you-use-3.4
+# required by include-what-you-use (argument)
+=sys-devel/llvm-3.4.2 clang
+
+# required by app-emulation/virt-manager-0.10.0-r1
+# required by virt-manager (argument)
+=app-emulation/libvirt-glib-0.1.7 python

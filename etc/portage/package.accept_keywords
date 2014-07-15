@@ -1,0 +1,50 @@
+=dev-util/bunny-0.93-r1 ~amd64
+=net-firewall/ufw-0.34_pre805 ~amd64
+=sys-firmware/iwl2030-ucode-18.168.6.1 ~amd64
+=net-im/qutim-0.3.1 ~amd64
+=app-benchmarks/bootchart2-0.14.5-r1 ~amd64
+=net-im/skype-4.3.0.37 ~amd64
+=app-emulation/uae-0.8.29-r2 ~amd64
+=dev-util/gource-0.40 ~amd64
+=net-proxy/cntlm-0.93_beta5-r1 ~amd64
+=app-admin/paxtest-0.9.9-r2 ~amd64
+=app-emulation/hercules-3.09 ~x86
+=dev-util/include-what-you-use-3.4 ~amd64
+=app-emulation/winetricks-20140302 ~amd64
+
+=app-editors/sublime-text-3059 ~amd64
+=games-util/steam-meta-0-r20131107 ~amd64
+
+# required by games-util/steam-meta-0-r20131107::steam-overlay
+# required by steam-meta (argument)
+=games-util/steam-launcher-1.0.0.48 ~amd64
+
+# required by games-util/steam-meta-0-r20131107::steam-overlay
+# required by steam-meta (argument)
+=games-util/steam-games-meta-0-r20140325 ~amd64
+
+# required by games-util/steam-meta-0-r20131107::steam-overlay
+# required by steam-meta (argument)
+=games-util/steam-client-meta-0-r20140616 ~amd64
+
+# required by dev-util/gource-0.40
+# required by gource (argument)
+=media-libs/glm-0.9.5.1 ~amd64
+
+# required by java-virtuals/jms-1.1
+# required by dev-java/avalon-logkit-2.1-r5
+# required by dev-java/avalon-framework-4.2.0-r1
+# required by dev-java/fop-0.95
+# required by app-misc/freemind-1.0.0-r1[pdf,-svg]
+# required by freemind (argument)
+=dev-java/glassfish-jms-api-1.1.2.2.04 ~amd64
+
+# required by sys-devel/clang-3.4.2-r100
+# required by dev-util/include-what-you-use-3.4
+# required by include-what-you-use (argument)
+=sys-devel/llvm-3.4.2 ~amd64
+
+# required by sys-devel/llvm-3.4.2[clang]
+# required by dev-util/include-what-you-use-3.4
+# required by include-what-you-use (argument)
+=sys-devel/clang-3.4.2-r100 ~amd64

@@ -1,0 +1,29 @@
+=app-arch/rar-4.2.0 RAR
+=x11-drivers/nvidia-drivers-337.25 NVIDIA-r2
+=net-misc/dropbox-2.6.33 CC-BY-ND-3.0 dropbox
+>=www-plugins/adobe-flash-11.2.202.378 AdobeFlash-11.x
+>=net-im/skype-4.3.0.37 skype-4.0.0.7-copyright
+=media-fonts/corefonts-1-r4 MSttfEULA
+>=media-gfx/xv-3.10a-r16 xv
+>=sys-firmware/iwl2030-ucode-18.168.6.1 ipw3945
+>=app-editors/sublime-text-3059 Sublime
+>=games-roguelike/adom-1.1.1-r1 adom
+
+# required by app-text/hunspell-1.3.2-r3[linguas_ru]
+# required by app-text/mythes-1.2.3
+# required by app-office/libreoffice-4.2.5.2
+# required by libreoffice (argument)
+>=app-dicts/myspell-ru-20060316 myspell-ru_RU-ALexanderLebedev
+
+# required by app-text/evince-3.10.3
+# required by evince (argument)
+=x11-themes/gnome-icon-theme-3.10.0 CC-Sampling-Plus-1.0
+
+# required by app-emulation/emul-linux-x86-qtlibs-20140508-r1
+# required by net-im/skype-4.3.0.37
+# required by skype (argument)
+>=app-emulation/emul-linux-x86-medialibs-20140508-r6 MPEG-4
+
+# required by games-util/steam-meta-0-r20131107::steam-overlay
+# required by steam-meta (argument)
+>=games-util/steam-launcher-1.0.0.48 ValveSteamLicense
