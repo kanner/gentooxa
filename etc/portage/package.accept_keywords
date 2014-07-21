@@ -11,9 +11,16 @@
 =app-emulation/hercules-3.09 ~x86
 =dev-util/include-what-you-use-3.4 ~amd64
 =app-emulation/winetricks-20140302 ~amd64
+=dev-python/pydb-1.26-r1 ~amd64
+=app-shells/bashdb-4.2.0.8 ~amd64
+=media-fonts/takao-fonts-003.02.01 ~amd64
+=net-misc/utelnetd-0.1.9-r1 ~amd64
 
 =app-editors/sublime-text-3059 ~amd64
 =games-util/steam-meta-0-r20131107 ~amd64
+
+=games-strategy/wargus-2.2.7 ~amd64
+=games-engines/stratagus-2.2.7 ~amd64
 
 # required by games-util/steam-meta-0-r20131107::steam-overlay
 # required by steam-meta (argument)

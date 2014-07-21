@@ -20,6 +20,13 @@ dev-util/cscope emacs
 dev-vcs/git subversion tk
 dev-util/cppcheck qt4
 dev-vcs/subversion -dso perl
+sys-kernel/genkernel cryptsetup
+sys-apps/util-linux tty-helpers
+dev-util/quilt graphviz
+dev-db/phpmyadmin vhosts
+=x11-drivers/nvidia-drivers-337.25 tools X
+
+=games-engines/stratagus-2.2.7 theora vorbis
 
 # required by www-client/firefox-24.6.0
 # required by firefox (argument)
@@ -89,3 +96,5 @@ dev-vcs/subversion -dso perl
 # required by app-emulation/virt-manager-0.10.0-r1
 # required by virt-manager (argument)
 =app-emulation/libvirt-glib-0.1.7 python
+
+app-emulation/libvirt virt-network
