@@ -1,2 +1,2 @@
-config_enp3s0="dhcp"
+config_eth0="dhcp"
 dns_domain_lo="gentooxa"
