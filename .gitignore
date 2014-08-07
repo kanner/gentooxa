@@ -29,3 +29,6 @@ usr/src/linux-3.14.5-hardened-r2/
 /etc/texmf/language.def.d
 /etc/texmf/updmap.d
 /etc/texmf/web2c
+/root
+/tmp
+/home

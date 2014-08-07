@@ -47,7 +47,7 @@ dev-db/phpmyadmin vhosts
 
 # required by app-office/libreoffice-4.2.5.2
 # required by libreoffice (argument)
-=media-libs/harfbuzz-0.9.23 icu
+>=media-libs/harfbuzz-0.9.23 icu
 
 # required by net-print/cups-1.7.1-r1
 # required by app-office/libreoffice-4.2.5.2[cups]
@@ -56,7 +56,7 @@ dev-db/phpmyadmin vhosts
 
 # required by mail-client/thunderbird-24.6.0
 # required by thunderbird (argument)
-=media-libs/libpng-1.6.10 apng
+>=media-libs/libpng-1.6.10 apng
 
 # required by media-gfx/gimp-2.8.10-r1[udev]
 # required by gimp (argument)
@@ -82,7 +82,7 @@ dev-db/phpmyadmin vhosts
 # required by net-wireless/crda-1.1.2-r3
 # required by net-wireless/wpa_supplicant-2.0-r2
 # required by wpa_supplicant (argument)
-=sys-fs/udev-212-r1 gudev
+>=sys-fs/udev-212-r1 gudev
 
 # /usr/portage/profiles/hardened/linux/package.mask:
 # Hardened versions of gcc-4.0* through gcc-4.2* are not available.
@@ -95,6 +95,6 @@ dev-db/phpmyadmin vhosts
 
 # required by app-emulation/virt-manager-0.10.0-r1
 # required by virt-manager (argument)
-=app-emulation/libvirt-glib-0.1.7 python
+>=app-emulation/libvirt-glib-0.1.7 python
 
 app-emulation/libvirt virt-network

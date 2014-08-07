@@ -1,5 +1,5 @@
 =app-arch/rar-4.2.0 RAR
-=x11-drivers/nvidia-drivers-337.25 NVIDIA-r2
+>=x11-drivers/nvidia-drivers-337.25 NVIDIA-r2
 =net-misc/dropbox-2.6.33 CC-BY-ND-3.0 dropbox
 >=www-plugins/adobe-flash-11.2.202.378 AdobeFlash-11.x
 >=net-im/skype-4.3.0.37 skype-4.0.0.7-copyright
@@ -23,7 +23,7 @@
 
 # required by app-text/evince-3.10.3
 # required by evince (argument)
-=x11-themes/gnome-icon-theme-3.10.0 CC-Sampling-Plus-1.0
+>=x11-themes/gnome-icon-theme-3.10.0 CC-Sampling-Plus-1.0
 
 # required by app-emulation/emul-linux-x86-qtlibs-20140508-r1
 # required by net-im/skype-4.3.0.37
