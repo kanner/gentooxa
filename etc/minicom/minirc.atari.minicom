@@ -1,0 +1,10 @@
+# Machine-generated file - use "minicom -s" to change parameters.
+pu port             /dev/ttyUSB0
+pu baudrate         9600
+pu bits             8
+pu parity           N
+pu stopbits         1
+pu updir            /home/toor/minicom/upload
+pu downdir          /home/toor/minicom/download
+pu fselw            Yes
+pu askdndir         No 

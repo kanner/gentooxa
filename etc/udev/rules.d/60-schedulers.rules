@@ -1,0 +1,4 @@
+# deadline scheduler for SSD
+ACTION=="add|change", KERNEL=="sda", ATTR{queue/rotational}=="0", ATTR{queue/scheduler}="deadline"
+# cfq for HDD
+ACTION=="add|change", KERNEL=="sdb", ATTR{queue/rotational}=="1", ATTR{queue/scheduler}="cfq"

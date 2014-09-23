@@ -1,2 +1,61 @@
+###     WIRED LAN       ###
 config_eth0="dhcp"
+#dhcpcd_enp7s0="-t 2"
 dns_domain_lo="gentooxa"
+#config_eth0="10.0.1.2 netmask 255.255.255.0 brd 10.0.1.255"
+#routes_eth0="default gw 10.0.1.1"
+#dns_servers_eth0="8.8.8.8 127.0.0.1"
+
+###     WIRELESS LAN    ###
+modules_wlan0="wpa_supplicant"
+#essid_wlan0="gentoo-spot"
+config_wlan0="dhcp"
+dhcpcd_wlan0="-t 5"
+#channel_wlan0=9
+#wpa_supplicant_wlan0="-B -c /etc/wpa_supplicant/wpa_supplicant.conf"
+wpa_supplicant_wlan0="-B -c /etc/wpa_supplicant/wpa_supplicant.conf -D wext -d /var/log/wpa_supplicant.log"
+ctrl_interface=/var/run/wpa_supplicant
+
+#routes_wlan0="213.234.235.86 via 10.3.1.1"
+
+###     VPN CONNECTION  ###
+myvpn="8.8.8.8"
+mygw="10.0.0.101"
+myeth="eth0"
+#myeth="wlan0"
+config_ppp0="ppp"
+link_ppp0="pty \"pptp $myvpn --nolaunchpppd\""
+username_ppp0="user"
+password_ppp0="password"
+pppd_ppp0="lock
+	nodeflate
+	nobsdcomp
+	require-mppe-128
+	refuse-mschap
+	require-mschap-v2
+	refuse-eap
+	refuse-chap
+	refuse-pap
+	persist
+	logfile /var/log/pptp-client.log
+	noauth"
+
+# testing
+postup(){
+	if [[ ${IFACE} = ppp0 ]]; then
+		route add -host $myvpn gw $mygw
+		route add default ppp0
+		route del default $myeth
+	fi
+	return 0;
+}
+
+postdown(){
+	if [[ ${IFACE} = "ppp0" ]]; then
+		route add default gw $mygw dev $myeth
+		route del -host $myvpn
+		route del $myvpn
+	fi
+	return 0;
+}
+

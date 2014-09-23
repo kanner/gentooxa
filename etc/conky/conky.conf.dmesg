@@ -1,0 +1,25 @@
+background no
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+use_xft yes
+xftfont Terminus:size=9
+double_buffer yes
+draw_shades yes
+default_color white
+default_shade_color black
+default_outline_color blue
+alignment top_left
+gap_x 10
+gap_y 10
+TEXT
+${color a1ccea}dmesg:
+#$hr
+#${color ffffff}${execi 2 dmesg | tail -n 30}
+$hr
+${color ffffff}${exec dmesg | uniq | tail -n 70}
+
+#${color a1ccea}log:
+#$hr
+#${color ffffff}${execi 2 sudo tail -n 5 /var/log/messages}

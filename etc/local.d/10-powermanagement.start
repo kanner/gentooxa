@@ -1,0 +1,66 @@
+#############################
+# Power Aware CPU Scheduler #
+#############################
+#echo 1 > /sys/devices/system/cpu/sched_mc_power_savings
+
+###############################
+# Autosuspend for USB devices #
+###############################
+### Laptop_Integrated_Webcam_2M [CN04MYKF724871AHN1G1A01]
+#echo auto > /sys/bus/usb/devices/1-1.4/power/control
+### M11x-R3 [Alienware Gaming]
+#echo auto > /sys/bus/usb/devices/1-1.7/power/control
+
+###############################
+# Autosuspend for PCI devices #
+###############################
+### Host bridge: Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+#echo auto > /sys/bus/pci/devices/0000\:00\:00.0/power/control
+### PCI bridge: Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+#echo auto > /sys/bus/pci/devices/0000\:00\:01.0/power/control
+### VGA compatible controller: Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller (rev 09)
+#echo auto > /sys/bus/pci/devices/0000\:00\:02.0/power/control
+### Communication controller: Intel Corporation 6 Series/C200 Series Chipset Family MEI Controller #1 (rev 04)
+#echo auto > /sys/bus/pci/devices/0000\:00\:16.0/power/control
+### Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 05)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1b.0/power/control
+### PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 1 (rev b5)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1c.0/power/control
+### PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 3 (rev b5)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1c.2/power/control
+### PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 4 (rev b5)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1c.3/power/control
+### PCI bridge: Intel Corporation 6 Series/C200 Series Chipset Family PCI Express Root Port 6 (rev b5)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1c.5/power/control
+### USB controller: Intel Corporation 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #1 (rev 05)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1d.0/power/control
+### PCI bridge: Intel Corporation 82801 Mobile PCI Bridge (rev a5)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1e.0/power/control
+### ISA bridge: Intel Corporation QS67 Express Chipset Family LPC Controller (rev 05)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1f.0/power/control
+### SATA controller: Intel Corporation 6 Series/C200 Series Chipset Family 6 port SATA AHCI Controller (rev 05)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1f.2/power/control
+### SMBus: Intel Corporation 6 Series/C200 Series Chipset Family SMBus Controller (rev 05)
+#echo auto > /sys/bus/pci/devices/0000\:00\:1f.3/power/control
+### VGA compatible controller: nVidia Corporation GF106 [GeForce GT 555M] (rev a1)
+#echo auto > /sys/bus/pci/devices/0000\:01\:00.0/power/control
+### Ethernet controller: Atheros Communications AR8151 v2.0 Gigabit Ethernet (rev c0)
+#echo auto > /sys/bus/pci/devices/0000\:07\:00.0/power/control
+### Network controller: Atheros Communications Inc. AR9300 Wireless LAN adaptor (rev 01)
+#echo auto > /sys/bus/pci/devices/0000\:0d\:00.0/power/control
+### System peripheral: JMicron Technology Corp. SD/MMC Host Controller (rev 30)
+#echo auto > /sys/bus/pci/devices/0000\:13\:00.0/power/control
+### System peripheral: JMicron Technology Corp. MS Host Controller (rev 30)
+#echo auto > /sys/bus/pci/devices/0000\:13\:00.3/power/control
+### USB controller: NEC Corporation uPD720200 USB 3.0 Host Controller (rev 04)
+#echo auto > /sys/bus/pci/devices/0000\:19\:00.0/power/control
+
+##########################################
+# Intel HDA Audio Codec Power Management #
+##########################################
+#echo 1 > /sys/module/snd_hda_intel/parameters/power_save
+
+##############################
+# AHCI Link Power Management #
+##############################
+#echo min_power > /sys/class/scsi_host/host0/link_power_management_policy
