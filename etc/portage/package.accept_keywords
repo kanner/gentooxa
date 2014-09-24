@@ -15,6 +15,7 @@
 =app-shells/bashdb-4.2.0.8 ~amd64
 =media-fonts/takao-fonts-003.02.01 ~amd64
 =net-misc/utelnetd-0.1.9-r1 ~amd64
+=dev-tex/pscyr-0.4d_beta9 ~amd64
 
 =app-editors/sublime-text-3059 ~amd64
 =games-util/steam-meta-0-r20131107 ~amd64

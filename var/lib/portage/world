@@ -27,6 +27,7 @@ app-emulation/uae
 app-emulation/virt-manager
 app-emulation/virtualbox
 app-emulation/virtualbox-extpack-oracle
+app-emulation/virtualbox-modules
 app-emulation/wine
 app-emulation/winetricks
 app-forensics/autopsy
@@ -52,12 +53,14 @@ app-text/convmv
 app-text/djview
 app-text/evince
 app-text/texlive
+app-text/tree
 app-text/wgetpaste
 app-vim/fluxbox-syntax
 app-vim/vim-spell-en
 app-vim/vim-spell-ru
 dev-db/mysql
 dev-db/phpmyadmin
+dev-db/phpmyadmin:4.1.7
 dev-java/telnetd
 dev-lang/perl
 dev-lang/php
@@ -67,6 +70,8 @@ dev-python/cython
 dev-python/pydb
 dev-python/pygobject:2
 dev-ruby/rubygems
+dev-tcltk/expect
+dev-tex/pscyr
 dev-tex/texmfind
 dev-texlive/texlive-latexextra
 dev-util/bunny
@@ -90,6 +95,9 @@ games-engines/scummvm
 games-misc/cowsay
 games-roguelike/adom
 games-roguelike/rogue
+games-util/steam-client-meta
+games-util/steam-games-meta
+games-util/steam-launcher
 games-util/steam-meta
 gnome-extra/zenity
 mail-client/thunderbird
@@ -105,6 +113,7 @@ media-fonts/wqy-microhei
 media-fonts/wqy-zenhei
 media-gfx/gimp
 media-gfx/gqview
+media-gfx/graphviz
 media-gfx/imagemagick
 media-gfx/xv
 media-gfx/xzgv
@@ -122,6 +131,7 @@ net-dialup/ppp
 net-dialup/pptpclient
 net-dialup/pptpd
 net-dns/dnsmasq
+net-firewall/iptables
 net-firewall/ufw
 net-fs/samba
 net-ftp/filezilla
@@ -135,6 +145,7 @@ net-misc/bridge-utils
 net-misc/dhcpcd
 net-misc/dropbox
 net-misc/netifrc
+net-misc/openconnect
 net-misc/putty
 net-misc/rdesktop
 net-misc/ssh-askpass-fullscreen
@@ -144,8 +155,10 @@ net-misc/telnet-bsd
 net-misc/tightvnc
 net-misc/tor
 net-misc/utelnetd
+net-misc/vpnc
 net-misc/x11-ssh-askpass
 net-p2p/transmission
+net-print/cups
 net-proxy/cntlm
 net-proxy/privoxy
 net-wireless/bluez
@@ -164,7 +177,10 @@ sys-block/gpart
 sys-block/gparted
 sys-block/parted
 sys-boot/grub:0
+sys-boot/syslinux
 sys-boot/unetbootin
+sys-devel/automake
+sys-devel/automake:1.11
 sys-devel/bc
 sys-devel/crossdev
 sys-devel/gcc:3.4
@@ -176,12 +192,15 @@ sys-devel/gcc:4.6
 sys-devel/gdb
 sys-firmware/iwl2030-ucode
 sys-fs/jfsutils
+sys-fs/lvm2
 sys-fs/ntfs3g
 sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 sys-kernel/genkernel
 sys-kernel/hardened-sources
+sys-libs/e2fsprogs-libs
 sys-libs/glibc
+sys-libs/pam
 sys-power/acpitool
 sys-power/hibernate-script
 sys-process/cronie
