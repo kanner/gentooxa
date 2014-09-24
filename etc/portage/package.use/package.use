@@ -30,7 +30,7 @@ dev-db/phpmyadmin vhosts
 
 # required by www-client/firefox-24.6.0
 # required by firefox (argument)
-=dev-lang/python-2.7.6 sqlite
+>=dev-lang/python-2.7.6 sqlite
 
 # required by app-text/evince-3.10.3
 # required by evince (argument)

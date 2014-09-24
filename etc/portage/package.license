@@ -1,6 +1,6 @@
 =app-arch/rar-4.2.0 RAR
 >=x11-drivers/nvidia-drivers-337.25 NVIDIA-r2
-=net-misc/dropbox-2.6.33 CC-BY-ND-3.0 dropbox
+>=net-misc/dropbox-2.6.33 CC-BY-ND-3.0 dropbox
 >=www-plugins/adobe-flash-11.2.202.378 AdobeFlash-11.x
 >=net-im/skype-4.3.0.37 skype-4.0.0.7-copyright
 =media-fonts/corefonts-1-r4 MSttfEULA
