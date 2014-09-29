@@ -198,6 +198,7 @@ sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 sys-kernel/genkernel
 sys-kernel/hardened-sources
+sys-kernel/hardened-sources:3.14.5-r2
 sys-libs/e2fsprogs-libs
 sys-libs/glibc
 sys-libs/pam
