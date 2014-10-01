@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -r /proc/sys/kernel/dmesg_restrict ]; then
+	if [ $(cat /proc/sys/kernel/dmesg_restrict) = 1 ]; then
+		echo 0 > /proc/sys/kernel/dmesg_restrict
+	fi
+fi
