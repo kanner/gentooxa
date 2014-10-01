@@ -6,3 +6,4 @@ pu parity           N
 pu stopbits         1
 pu updir            /home/toor/minicom/upload
 pu downdir          /home/toor/minicom/download
+#pu rtscts           No

@@ -115,6 +115,7 @@ media-gfx/gimp
 media-gfx/gqview
 media-gfx/graphviz
 media-gfx/imagemagick
+media-gfx/qingy-themes
 media-gfx/xv
 media-gfx/xzgv
 media-sound/alsa-utils
@@ -166,11 +167,13 @@ net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 rox-base/rox
 sys-apps/fakeroot
+sys-apps/fbset
 sys-apps/gradm
 sys-apps/lshw
 sys-apps/mlocate
 sys-apps/pcmciautils
 sys-apps/pcsc-lite
+sys-apps/qingy
 sys-apps/setserial
 sys-apps/usermode-utilities
 sys-block/gpart

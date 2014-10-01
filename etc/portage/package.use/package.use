@@ -25,6 +25,7 @@ sys-apps/util-linux tty-helpers
 dev-util/quilt graphviz
 dev-db/phpmyadmin vhosts
 =x11-drivers/nvidia-drivers-337.25 tools X
+sys-apps/qingy directfb
 
 =games-engines/stratagus-2.2.7 theora vorbis
 

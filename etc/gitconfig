@@ -1,0 +1,6 @@
+[color]
+	ui = true
+[merge]
+	tool = tkdiff
+[push]
+	default = simple
