@@ -4,3 +4,7 @@
 	tool = tkdiff
 [push]
 	default = simple
+[core]
+	editor = emacs -nw
+[alias]
+        addp = add--interactive-words --patch=stage --
