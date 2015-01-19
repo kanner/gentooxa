@@ -1,0 +1,7 @@
+#!/bin/bash
+md5sum -c git.hash
+if [ $? == 0 ]; then
+	echo "binary files were not changed"
+else
+	echo "binary files have been changed"
+fi

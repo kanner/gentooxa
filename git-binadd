@@ -1,0 +1,7 @@
+#!/bin/bash
+md5sum $1 >> /git.hash
+git add /git.hash
+
+# check $?
+# add $1 to .gitignore?
+# dublicates?

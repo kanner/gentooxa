@@ -1,0 +1,9 @@
+#!/bin/bash
+grep -v $1 /git.hash > /git.hash.bak
+mv /git.hash.bak /git.hash
+git add /git.hash
+
+# check $?
+# remove $1 from .gitignore?
+# check and report hash error?
+# dublicates
