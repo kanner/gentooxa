@@ -18,6 +18,15 @@ ctrl_interface=/var/run/wpa_supplicant
 
 #routes_wlan0="213.234.235.86 via 10.3.1.1"
 
+###	TUN/TAP		###
+#tuntap_tap0="tap"
+#config_tap0=null
+##config_eth1=null
+#config_br0="dhcp"
+#mac_br0="00:00:00:00:00:01"
+#bridge_br0="tap0"
+#rc_net_br0_need="net.tap0"
+
 ###     VPN CONNECTION  ###
 myvpn="8.8.8.8"
 mygw="10.0.0.101"

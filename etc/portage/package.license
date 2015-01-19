@@ -2,7 +2,7 @@
 >=x11-drivers/nvidia-drivers-337.25 NVIDIA-r2
 >=net-misc/dropbox-2.6.33 CC-BY-ND-3.0 dropbox
 >=www-plugins/adobe-flash-11.2.202.378 AdobeFlash-11.x
->=net-im/skype-4.3.0.37 skype-4.0.0.7-copyright
+>=net-im/skype-4.3.0.37 skype-4.0.0.7-copyright skype-4.0.0.7-third-party_attributions.txt
 =media-fonts/corefonts-1-r4 MSttfEULA
 >=media-gfx/xv-3.10a-r16 xv
 >=sys-firmware/iwl2030-ucode-18.168.6.1 ipw3945
@@ -14,6 +14,10 @@
 
 >=games-strategy/wargus-data-0 all-rights-reserved
 >=games-roguelike/adom-1.1.1-r1 adom
+
+>=games-fps/doom3-1.3.1304 DOOM3
+=games-fps/doom3-demo-1.1.1286 DOOM3
+>=games-action/brutal-legend-20130615 all-rights-reserved
 
 # required by app-text/hunspell-1.3.2-r3[linguas_ru]
 # required by app-text/mythes-1.2.3

@@ -28,6 +28,15 @@ dev-db/phpmyadmin vhosts
 sys-apps/qingy directfb
 net-misc/putty gtk
 net-im/licq qt4
+app-text/texlive extra
+media-video/mplayer aalib directfb libcaca
+media-video/vlc aalib libcaca
+
+# required by app-text/pdftk-1.44
+sys-devel/gcc gcj
+
+# virtualbox not correct on hardened gentoo
+app-emulation/virtualbox-modules -pax_kernel
 
 =games-engines/stratagus-2.2.7 theora vorbis
 
@@ -37,7 +46,7 @@ net-im/licq qt4
 
 # required by app-text/evince-3.10.3
 # required by evince (argument)
-=app-text/poppler-0.24.5 cairo
+>=app-text/poppler-0.24.5 cairo
 
 # required by app-text/gnome-doc-utils-0.20.10-r1
 # required by sys-block/gparted-0.16.2
@@ -74,7 +83,7 @@ net-im/licq qt4
 # required by media-sound/pulseaudio-5.0-r2[alsa]
 # required by net-im/skype-4.3.0.37[pulseaudio]
 # required by skype (argument)
-=media-plugins/alsa-plugins-1.0.27-r1 pulseaudio
+>=media-plugins/alsa-plugins-1.0.27-r1 pulseaudio
 
 # required by mail-client/thunderbird-24.6.0[crypt]
 # required by thunderbird (argument)
@@ -100,4 +109,19 @@ net-im/licq qt4
 # required by virt-manager (argument)
 >=app-emulation/libvirt-glib-0.1.7 python
 
+# required by app-emulation/libvirt-1.2.9[virt-network]
+# required by dev-python/libvirt-python-1.2.9
+# required by app-emulation/virt-manager-0.10.0-r2
+# required by @selected
+# required by @world (argument)
+>=net-dns/dnsmasq-2.66 script
+
+# required by app-emulation/libvirt-1.2.9[qemu]
+# required by dev-python/libvirt-python-1.2.9
+# required by app-emulation/virt-manager-0.10.0-r2
+# required by @selected
+# required by @world (argument)
+=app-emulation/qemu-2.1.1 usbredir
+
 app-emulation/libvirt virt-network
+
